@@ -16,7 +16,6 @@ function App() {
       <About />
       <Technology />
       <HowItWorks />
-      <Impact />
       <Partner />
       <Footer />
     </div>
