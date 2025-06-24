@@ -4,16 +4,33 @@ import { ArrowRight, Play } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay simulating drone field imagery */}
+
+      {/* Background with gradient overlay simulating drone field imagery 
       <div className="absolute inset-0 bg-gradient-to-br from-green-900/20 via-blue-900/30 to-yellow-900/20">
         <div className="absolute inset-0 bg-gradient-to-t from-green-900/40 via-transparent to-sky-500/20"></div>
-        {/* Simulated NDVI overlay pattern */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-green-400 rounded-full blur-3xl"></div>
           <div className="absolute top-3/4 right-1/4 w-40 h-40 bg-yellow-400 rounded-full blur-3xl"></div>
           <div className="absolute bottom-1/4 left-1/3 w-36 h-36 bg-red-400 rounded-full blur-3xl"></div>
         </div>
+      </div> */}
+
+      <div className="absolute inset-0 group overflow-hidden">
+        {/* Normal farm image (visible by default) */}
+        <img
+          src="assets/Vari_Farm_Before.png"
+          alt="Farm View"
+          className="w-full h-full object-cover transition-opacity duration-500"
+        />
+
+        {/* NDVI image (shown on hover) */}
+        <img
+          src="assets/Vari_Farm_After.png"
+          alt="NDVI View"
+          className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        />
       </div>
+
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">

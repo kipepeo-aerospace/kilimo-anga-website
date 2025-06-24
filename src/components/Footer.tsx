@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bone as Drone, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Plane, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,7 +9,8 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <Drone className="h-8 w-8 text-green-400" />
+              {/* <Plane className="h-8 w-8 text-green-400" /> */}
+              <img src="/assets/kilimoanga_logo.png" className="h-8 w-8 text-green-600" alt="Kilimo Anga Logo" />
               <span className="ml-2 text-2xl font-bold">Kilimo Anga</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">

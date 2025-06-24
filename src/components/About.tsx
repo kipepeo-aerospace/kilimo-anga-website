@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bone as Drone, Camera, BarChart3 } from 'lucide-react';
+import { Plane, Camera, BarChart3 } from 'lucide-react';
 
 const About = () => {
   return (
@@ -10,9 +10,9 @@ const About = () => {
             What is <span className="text-green-600">Kilimo Anga</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Kilimo Anga is Kipepeo Aerospace's flagship initiative addressing the critical gap in 
-            agricultural data utilization. We equip UAS operators with cutting-edge drone technology, 
-            multispectral imaging systems, and powerful analytics to transform raw aerial data into 
+            Kilimo Anga is Kipepeo Aerospace's flagship initiative addressing the critical gap in
+            agricultural data utilization. We equip UAS operators with cutting-edge drone technology,
+            multispectral imaging systems, and powerful analytics to transform raw aerial data into
             actionable farm-level insights that drive better agricultural decisions across Kenya and beyond.
           </p>
         </div>
@@ -20,7 +20,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="text-center group">
             <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors duration-300">
-              <Drone className="h-10 w-10 text-green-600" />
+              <Plane className="h-10 w-10 text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Custom Drone Hardware</h3>
             <p className="text-gray-600">
@@ -56,8 +56,8 @@ const About = () => {
                 Bridging the Gap Between Data and Decision
               </h3>
               <p className="text-gray-600 mb-6">
-                Traditional farming relies on instinct and experience. Modern agriculture demands data-driven decisions. 
-                Kilimo Anga provides the missing link, transforming complex aerial imagery into simple, actionable insights 
+                Traditional farming relies on instinct and experience. Modern agriculture demands data-driven decisions.
+                Kilimo Anga provides the missing link, transforming complex aerial imagery into simple, actionable insights
                 that farmers and agricultural professionals can immediately implement.
               </p>
               <div className="flex items-center text-green-600 font-semibold">
