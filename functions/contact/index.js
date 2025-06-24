@@ -1,33 +1,8 @@
-const sgMail = require('@sendgrid/mail');
-
 module.exports = async function (context, req) {
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-    const { name, organization, email, type, message } = req.body;
-
-    const msg = {
-        to: 'info@kipepeo.space',
-        from: 'noreply@kipepeo.space', // Must be verified in SendGrid
-        subject: `New Contact from ${name} - ${organization}`,
-        html: `
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Organization:</strong> ${organization}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Type:</strong> ${type}</p>
-      <p><strong>Message:</strong><br/>${message}</p>
-    `,
+    context.log("Contact function triggered.");
+    context.res = {
+        status: 200,
+        body: { message: "Function is alive and responding!" }
     };
-
-    try {
-        await sgMail.send(msg);
-        context.res = {
-            status: 200,
-            body: { success: true },
-        };
-    } catch (error) {
-        context.res = {
-            status: 500,
-            body: { error: error.message },
-        };
-    }
 };
+// Note: This is a placeholder response. The actual implementation should handle the contact form submission as shown in the commented code above.  
