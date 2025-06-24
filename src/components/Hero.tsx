@@ -1,7 +1,11 @@
 import React from 'react';
+import { useState } from "react";
 import { ArrowRight, Play } from 'lucide-react';
 
 const Hero = () => {
+
+  const [showNDVI, setShowNDVI] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
@@ -15,22 +19,47 @@ const Hero = () => {
         </div>
       </div> */}
 
-      <div className="absolute inset-0 group overflow-hidden">
-        {/* Normal farm image (visible by default) */}
+      {/*<div className="absolute inset-0 group overflow-hidden">
         <img
           src="assets/Vari_Farm_Before.png"
           alt="Farm View"
           className="w-full h-full object-cover transition-opacity duration-500"
+          loading="lazy"
         />
 
-        {/* NDVI image (shown on hover) */}
         <img
           src="assets/Vari_Farm_After.png"
           alt="NDVI View"
           className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          loading="lazy"
         />
-      </div>
+      </div>*/}
 
+      <div className="absolute inset-0 group overflow-hidden rounded-xl">
+        {/* Normal farm image */}
+        <img
+          src="assets/Vari_Farm_Before.png"
+          alt="Farm View"
+          className={`w-full h-full object-cover transition-opacity duration-500 ${showNDVI ? "opacity-0" : "opacity-100"
+            }`}
+        />
+
+        {/* NDVI image */}
+        <img
+          src="assets/Vari_Farm_After.png"
+          alt="NDVI View"
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${showNDVI ? "opacity-100" : "opacity-0"
+            }`}
+        />
+
+        {/* Toggle Button */}
+        <button
+          onClick={() => setShowNDVI(!showNDVI)}
+          className="absolute bottom-6 right-6 bg-white/80 text-sm font-semibold px-4 py-2 rounded-md shadow hover:bg-white transition"
+        >
+          {showNDVI ? "Show Farm Image" : "Show NDVI"}
+        </button>
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
