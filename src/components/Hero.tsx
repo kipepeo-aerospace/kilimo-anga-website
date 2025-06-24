@@ -57,8 +57,9 @@ const Hero = () => {
           onClick={() => setShowNDVI(!showNDVI)}
           className="absolute bottom-6 right-6 bg-white/80 text-sm font-semibold px-4 py-2 rounded-md shadow hover:bg-white transition"
         >
-          {showNDVI ? "Show Farm Image" : "Show NDVI"}
+          {showNDVI ? "Original" : "NDVI"}
         </button>
+
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

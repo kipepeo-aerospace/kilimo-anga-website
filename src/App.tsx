@@ -6,6 +6,7 @@ import Technology from './components/Technology';
 import HowItWorks from './components/HowItWorks';
 import Impact from './components/Impact';
 import Partner from './components/Partner';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Technology />
       <HowItWorks />
       <Partner />
+      <Contact />
       <Footer />
     </div>
   );
