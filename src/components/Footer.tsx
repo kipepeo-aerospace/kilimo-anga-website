@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Plane, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState('');
+
+  const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('loading');
+
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        setStatus('success');
+        setEmail('');
+      } else {
+        setStatus(data.error || 'error');
+      }
+    } catch (err) {
+      setStatus('error');
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -33,20 +59,23 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="flex space-x-4">
+            {/* Social Links:
+              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a> 
               <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
+              */}
+            <div className="flex space-x-4">
+
+              <a href="https://x.com/aero_kipepeo#" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
+              <a href="https://www.linkedin.com/company/kipepeo-aerospace/" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
+
             </div>
           </div>
 
@@ -57,8 +86,8 @@ const Footer = () => {
               <li><a href="#about" className="text-gray-300 hover:text-green-400 transition-colors">About</a></li>
               <li><a href="#technology" className="text-gray-300 hover:text-green-400 transition-colors">Technology</a></li>
               <li><a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a></li>
-              <li><a href="#impact" className="text-gray-300 hover:text-green-400 transition-colors">Impact</a></li>
               <li><a href="#partner" className="text-gray-300 hover:text-green-400 transition-colors">Partner</a></li>
+              <li><a href="#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
@@ -86,7 +115,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Kilimo Anga. All rights reserved. An initiative by Kipepeo Aerospace.
+              © 2025 Kilimo Anga. All rights reserved. An initiative by Kipepeo Aerospace.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Privacy Policy</a>
