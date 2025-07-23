@@ -18,7 +18,6 @@ function App() {
       <Technology />
       <HowItWorks />
       <Partner />
-      <Contact />
       <Footer />
     </div>
   );

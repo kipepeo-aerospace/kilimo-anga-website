@@ -9,7 +9,7 @@ const Partner = () => {
       description: 'Professional drone service providers looking to expand into precision agriculture',
       benefits: ['Advanced analytics platform', 'Specialized agricultural sensors', 'Training and certification programs', 'Marketing support'],
       cta: 'Join Our Network',
-      link: '#contact'
+      link: "mailto:info@kipepeo.space"
     },
     {
       icon: Building,
@@ -17,7 +17,7 @@ const Partner = () => {
       description: 'Companies seeking to integrate precision agriculture data into their operations',
       benefits: ['Custom API integrations', 'Bulk data processing', 'White-label solutions', 'Technical support'],
       cta: 'Partner With Us',
-      link: '#contact'
+      link: "mailto:info@kipepeo.space"
     },
     {
       icon: GraduationCap,
@@ -25,7 +25,7 @@ const Partner = () => {
       description: 'Universities and research centers advancing agricultural technology',
       benefits: ['Research collaboration', 'Data sharing agreements', 'Student internship programs', 'Technology access'],
       cta: 'Collaborate',
-      link: '#contact'
+      link: "mailto:info@kipepeo.space"
     }
   ];
 

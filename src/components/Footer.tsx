@@ -44,21 +44,6 @@ const Footer = () => {
               multispectral imaging, and intelligent data analytics. An initiative by Kipepeo Aerospace.
             </p>
 
-            {/* Newsletter Signup */}
-            <div className="mb-6">
-              <h4 className="font-semibold mb-3">Stay Updated</h4>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                />
-                <button className="bg-green-600 px-6 py-2 rounded-r-lg hover:bg-green-700 transition-colors">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-
             {/* Social Links:
               <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
                 <Instagram className="h-5 w-5" />
@@ -115,7 +100,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Kilimo Anga. All rights reserved. An initiative by Kipepeo Aerospace.
+              © 2025 Kipepeo Aerospace. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Privacy Policy</a>
