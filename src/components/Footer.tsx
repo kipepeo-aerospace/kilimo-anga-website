@@ -72,7 +72,7 @@ const Footer = () => {
               <li><a href="#technology" className="text-gray-300 hover:text-green-400 transition-colors">Technology</a></li>
               <li><a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a></li>
               <li><a href="#partner" className="text-gray-300 hover:text-green-400 transition-colors">Partner</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact Us</a></li>
+              <li><a href="mailto:kilimoanga@kipepeo.space" className="text-gray-300 hover:text-green-400 transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-green-400 mr-3" />
-                <span className="text-gray-300">info@kipepeo.space</span>
+                <span className="text-gray-300">kilimoomanga@kipepeo.space</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-green-400 mr-3" />

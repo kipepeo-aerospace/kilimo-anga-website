@@ -1,31 +1,46 @@
 import React from 'react';
-import { Plane, Camera, Cloud, Zap, Target, Globe } from 'lucide-react';
+import { Plane, Camera, Cloud, Zap, Target, Globe, BarChart3 } from 'lucide-react';
 
 const Technology = () => {
   const technologies = [
     {
-      icon: Plane,
-      title: 'Aerial Platforms',
-      subtitle: 'Custom Engineering Excellence',
-      description: 'Fixed-wing VTOL drones designed for extended flight times and comprehensive field coverage. Our proprietary aircraft combine the efficiency of fixed-wing flight with vertical takeoff and landing capabilities.',
-      features: ['Long-range mapping capability', 'Weather-resistant design', 'Autonomous flight systems', 'Precision GPS navigation'],
-      color: 'green'
-    },
-    {
       icon: Camera,
-      title: 'Multispectral Imaging',
+      title: 'AngaCam',
       subtitle: 'Advanced Sensor Technology',
-      description: 'In-house developed multispectral cameras capturing Red, Green, Blue, and Near-Infrared bands. Purpose-built for agricultural applications with optimized spectral response.',
-      features: ['R, G, B, NIR band capture', 'High-resolution imaging', 'Real-time data processing', 'NDVI calculation ready'],
+      description: 'In-house developed multispectral cameras capturing Red, Green, Blue, and Near-Infrared bands. AngaCam is purpose-built for agricultural applications with optimized spectral response.',
+      features: [
+        'R, G, B, NIR band capture',
+        'High-resolution imaging',
+        'Real-time data processing',
+        'NDVI calculation ready'
+      ],
       color: 'blue'
     },
     {
       icon: Cloud,
-      title: 'Data Platform',
+      title: 'AngaCloud',
       subtitle: 'Intelligent Analytics Engine',
       description: 'Cloud-based analytics platform that transforms raw multispectral data into actionable agricultural insights. Real-time processing with geo-tagged advisory generation.',
-      features: ['NDVI & vegetation indices', 'Crop stress detection', 'Chlorophyll level analysis', 'Yield prediction models'],
+      features: [
+        'NDVI & vegetation indices',
+        'Crop stress detection',
+        'Chlorophyll level analysis',
+        'Yield prediction models'
+      ],
       color: 'yellow'
+    },
+    {
+      icon: BarChart3,
+      title: 'AngaView',
+      subtitle: 'Turning Data into Decisions',
+      description: 'An intuitive dashboard interface designed for farmers, agronomists, and UAS operators. AngaView transforms complex multispectral datasets into clear, actionable visualizations accessible from any device.',
+      features: [
+        'Interactive NDVI & index maps',
+        'Time-series crop monitoring',
+        'Multi-farm and field comparison',
+        'User-friendly mobile & web access'
+      ],
+      color: 'green'
     }
   ];
 
@@ -67,7 +82,7 @@ const Technology = () => {
             Our <span className="text-green-600">Innovation Stack</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Three integrated pillars of technology working together to deliver unprecedented 
+            Three integrated pillars of technology working together to deliver unprecedented
             agricultural insights from sky to soil.
           </p>
         </div>
@@ -76,16 +91,16 @@ const Technology = () => {
           {technologies.map((tech, index) => {
             const colors = getColorClasses(tech.color);
             const Icon = tech.icon;
-            
+
             return (
-              <div 
+              <div
                 key={index}
                 className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className={`${colors.bg} ${colors.hoverBg} w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300`}>
                   <Icon className={`h-8 w-8 ${colors.icon}`} />
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{tech.title}</h3>
                 <p className={`text-sm font-semibold ${colors.accent} mb-4 uppercase tracking-wide`}>
                   {tech.subtitle}
@@ -93,7 +108,7 @@ const Technology = () => {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {tech.description}
                 </p>
-                
+
                 <div className="space-y-3">
                   {tech.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center">
@@ -112,7 +127,7 @@ const Technology = () => {
           <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Technical Excellence
           </h3>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -122,7 +137,7 @@ const Technology = () => {
               <p className="text-3xl font-bold text-green-600 mb-2">2cm</p>
               <p className="text-gray-600">Ground resolution accuracy</p>
             </div>
-            
+
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Zap className="h-8 w-8 text-blue-600" />
@@ -131,7 +146,7 @@ const Technology = () => {
               <p className="text-3xl font-bold text-blue-600 mb-2">120min</p>
               <p className="text-gray-600">Continuous operation time</p>
             </div>
-            
+
             <div className="text-center">
               <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="h-8 w-8 text-yellow-600" />

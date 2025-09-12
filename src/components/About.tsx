@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plane, Camera, BarChart3 } from 'lucide-react';
+import { Plane, Camera, BarChart3, Cloud } from 'lucide-react';
 
 const About = () => {
   return (
@@ -11,23 +11,13 @@ const About = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Kilimo Anga is Kipepeo Aerospace's flagship initiative addressing the critical gap in
-            agricultural data utilization. We equip UAS operators with cutting-edge drone technology,
-            multispectral imaging systems, and powerful analytics to transform raw aerial data into
+            agricultural data utilization. We equip UAS operators with cutting-edge
+            multispectral imaging systems and powerful cloud-based analytics to transform raw aerial data into
             actionable farm-level insights that drive better agricultural decisions across Kenya and beyond.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="text-center group">
-            <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors duration-300">
-              <Plane className="h-10 w-10 text-green-600" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Custom Drone Hardware</h3>
-            <p className="text-gray-600">
-              Proprietary fixed-wing VTOL drones engineered specifically for long-range agricultural mapping and data collection.
-            </p>
-          </div>
-
           <div className="text-center group">
             <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300">
               <Camera className="h-10 w-10 text-blue-600" />
@@ -37,14 +27,34 @@ const About = () => {
               In-house developed multispectral cameras capturing R, G, B, and NIR bands for precise NDVI and vegetation analysis.
             </p>
           </div>
+          {/*
+          <div className="text-center group">
+            <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors duration-300">
+              <Plane className="h-10 w-10 text-green-600" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">Custom Drone Hardware</h3>
+            <p className="text-gray-600">
+              Proprietary fixed-wing VTOL drones engineered specifically for long-range agricultural mapping and data collection.
+            </p>
+          </div>
+          */}
 
           <div className="text-center group">
             <div className="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors duration-300">
-              <BarChart3 className="h-10 w-10 text-yellow-600" />
+              <Cloud className="h-10 w-10 text-yellow-600" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Analytics Dashboard</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">Analytics Engine</h3>
             <p className="text-gray-600">
-              Cloud-based platform delivering real-time crop health diagnostics and geo-tagged agricultural advisories.
+              Cloud-based engine delivering real-time crop health diagnostics, vegetation indices, and predictive models.
+            </p>
+          </div>
+          <div className="text-center group">
+            <div className="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-200 transition-colors duration-300">
+              <BarChart3 className="h-10 w-10 text-purple-600" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">Visualization & Insights</h3>
+            <p className="text-gray-600">
+              An intuitive dashboard that transforms raw multispectral data into interactive maps, time-series trends, and customizable farm reports.
             </p>
           </div>
         </div>
@@ -66,7 +76,7 @@ const About = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl p-8 text-white relative overflow-hidden">
+              <div className=" bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl p-8 text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
                 <div className="relative z-10">
                   <h4 className="text-2xl font-bold mb-4">Mission Impact</h4>
@@ -77,11 +87,19 @@ const About = () => {
                     </div>
                     <div className="flex items-center">
                       <div className="w-3 h-3 bg-white rounded-full mr-3"></div>
-                      <span>Real-time insights</span>
+                      <span>Real-time crop health insights</span>
                     </div>
                     <div className="flex items-center">
                       <div className="w-3 h-3 bg-white rounded-full mr-3"></div>
-                      <span>Actionable recommendations</span>
+                      <span>Early stress and disease detection</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-3 h-3 bg-white rounded-full mr-3"></div>
+                      <span>Optimized input resource utilization</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-3 h-3 bg-white rounded-full mr-3"></div>
+                      <span>Actionable recommendations for yield growth</span>
                     </div>
                   </div>
                 </div>

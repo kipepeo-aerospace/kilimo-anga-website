@@ -23,11 +23,8 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#partner" className="text-green-600 hover:text-green-700 font-medium">
-              Partner With Us
-            </a>
-            <a href="#technology" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
-              See Our Technology
+            <a href="https://angaview.kipepeo.space" target="_blank" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
+              AngaView Dashboard
             </a>
           </div>
 
