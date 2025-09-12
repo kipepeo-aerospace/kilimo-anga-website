@@ -1,6 +1,6 @@
 import React from 'react';
 import { Plane, Camera, Cloud, Zap, Target, Globe, BarChart3 } from 'lucide-react';
-import AngaViewVideo from './AngaViewVideo';
+
 
 const Technology = () => {
   const technologies = [
@@ -78,6 +78,8 @@ const Technology = () => {
   return (
     <section id="technology" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our <span className="text-green-600">Innovation Stack</span>
@@ -87,6 +89,7 @@ const Technology = () => {
             agricultural insights from sky to soil.
           </p>
         </div>
+
         {/* Innovation Stack */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {technologies.map((tech, index) => {
@@ -122,9 +125,6 @@ const Technology = () => {
             );
           })}
         </div>
-
-        {/* 🎥 Insert your AngaViewVideo here */}
-        <AngaViewVideo />
 
         {/* Technical Specifications */}
         <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">

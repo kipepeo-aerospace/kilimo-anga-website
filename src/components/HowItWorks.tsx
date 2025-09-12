@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plane, Camera, Upload, Eye, ArrowRight } from 'lucide-react';
+import AngaViewVideo from './AngaViewVideo';
 
 const HowItWorks = () => {
   const steps = [
@@ -53,6 +54,7 @@ const HowItWorks = () => {
   return (
     <section id="how-it-works" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             How It <span className="text-green-600">Works</span>
@@ -63,11 +65,13 @@ const HowItWorks = () => {
           </p>
         </div>
 
+
         <div className="relative">
           {/* Connection lines for desktop */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gray-200 transform -translate-y-1/2"></div>
 
-          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 relative">
+          {/* Step by Step */}
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 relative mb-16">
             {steps.map((step, index) => {
               const colors = getColorClasses(step.color);
               const Icon = step.icon;
@@ -110,6 +114,9 @@ const HowItWorks = () => {
             })}
           </div>
         </div>
+
+        {/* AngaViewVideo here */}
+        <AngaViewVideo />
 
         {/* Process Flow Summary */}
         <div className="mt-16 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 md:p-12">
