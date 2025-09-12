@@ -7,7 +7,7 @@ const Hero = () => {
   const [showNDVI, setShowNDVI] = useState(false);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden mt-16">
 
       {/* Background with gradient overlay simulating drone field imagery 
       <div className="absolute inset-0 bg-gradient-to-br from-green-900/20 via-blue-900/30 to-yellow-900/20">
@@ -55,7 +55,7 @@ const Hero = () => {
         {/* Toggle Button */}
         <button
           onClick={() => setShowNDVI(!showNDVI)}
-          className="absolute bottom-6 right-6 bg-white/80 text-sm font-semibold px-4 py-2 rounded-md shadow hover:bg-white transition"
+          className="absolute bottom-6 right-6 bg-white/80 text-sm font-semibold px-4 py-2 rounded-md shadow hover:bg-white transition hidden sm:block"
         >
           {showNDVI ? "Original" : "NDVI"}
         </button>
@@ -92,6 +92,14 @@ const Hero = () => {
             AngaView Dashboard
             <ArrowRight className="ml-2 h-5 w-5" />
           </a>
+
+          {/* NDVI toggle button - mobile only */}
+          <button
+            onClick={() => setShowNDVI(!showNDVI)}
+            className="bg-white/80 text-gray-800 px-8 py-4 rounded-lg font-semibold text-lg shadow hover:bg-white transition-all duration-300 block sm:hidden"
+          >
+            {showNDVI ? "Original" : "NDVI"}
+          </button>
         </div>
 
         {/* Floating elements */}
