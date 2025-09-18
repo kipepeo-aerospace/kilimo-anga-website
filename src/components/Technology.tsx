@@ -156,7 +156,7 @@ const Technology = () => {
                 <Globe className="h-8 w-8 text-yellow-600" />
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Area Coverage</h4>
-              <p className="text-3xl font-bold text-yellow-600 mb-2">500ha</p>
+              <p className="text-3xl font-bold text-yellow-600 mb-2">1000 acres</p>
               <p className="text-gray-600">Per single flight mission</p>
             </div>
           </div>
