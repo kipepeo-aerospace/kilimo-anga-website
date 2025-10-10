@@ -38,7 +38,7 @@ const Hero = () => {
       <div className="absolute inset-0 group overflow-hidden rounded-xl">
         {/* Normal farm image */}
         <img
-          src="assets/Vari_Farm_Before.png"
+          src="assets/dn001.jpg"
           alt="Farm View"
           className={`w-full h-full object-cover transition-opacity duration-500 ${showNDVI ? "opacity-0" : "opacity-100"
             }`}
@@ -46,7 +46,7 @@ const Hero = () => {
 
         {/* NDVI image */}
         <img
-          src="assets/Vari_Farm_After.png"
+          src="assets/dn001_VARI.jpg"
           alt="NDVI View"
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${showNDVI ? "opacity-100" : "opacity-0"
             }`}
@@ -70,10 +70,11 @@ const Hero = () => {
           <br />
           Starts Here
         </h1>
-
-        <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Revolutionizing precision agriculture through custom drone technology,
+            
+        <p className="font-bold text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
+          {/*Revolutionizing precision agriculture through custom drone technology,
           multispectral imaging, and intelligent data analytics for actionable farm insights.
+          */}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
