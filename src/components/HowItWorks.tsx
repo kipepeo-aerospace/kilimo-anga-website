@@ -116,7 +116,7 @@ const HowItWorks = () => {
         </div>
 
         {/* AngaViewVideo here */}
-        <AngaViewVideo />
+        {/*<AngaViewVideo />*/}
 
         {/* Process Flow Summary */}
         <div className="mt-16 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 md:p-12">
