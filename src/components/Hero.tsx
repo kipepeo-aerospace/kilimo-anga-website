@@ -79,7 +79,7 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="assets/shortdeck.pdf"
+            href="assets/teaser.pdf"
             target="_blank"
             className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all duration-300 border border-white/30 flex items-center"
           >

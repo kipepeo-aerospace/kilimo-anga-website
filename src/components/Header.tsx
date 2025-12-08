@@ -22,7 +22,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="assets/shortdeck.pdf" target="_blank" className="bg-white text-green-60 px-4 py-2 rounded-lg hover:bg-green-700 hover:text-white transition-colors">
+            <a href="assets/teaser.pdf" target="_blank" className="bg-white text-green-60 px-4 py-2 rounded-lg hover:bg-green-700 hover:text-white transition-colors">
               Pitch Deck
             </a>
             <a href="https://angaview.kipepeo.space" target="_blank" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">

@@ -11,9 +11,8 @@ const About = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Kilimo Anga is Kipepeo Aerospace's flagship initiative addressing the critical gap in
-            agricultural data utilization. We equip UAS operators with cutting-edge
-            multispectral imaging systems and powerful cloud-based analytics to transform raw aerial data into
-            actionable farm-level insights that drive better agricultural decisions across Kenya and beyond.
+            agricultural data utilization. We revolutionize precision agriculture for maize farming 
+            in Kenya through custom technology and intelligent data analytics for actionable farm insights.
           </p>
         </div>
 
