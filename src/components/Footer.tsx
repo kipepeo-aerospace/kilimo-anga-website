@@ -35,9 +35,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              {/* <Plane className="h-8 w-8 text-green-400" /> */}
-              <img src="/assets/kilimoanga_logo.png" className="h-8 w-8 text-green-600" alt="Kilimo Anga Logo" />
-              <span className="ml-2 text-2xl font-bold">Kilimo Anga</span>
+              <img src="/assets/kipepeologoBLACK.png" className="h-8 w-8 text-green-600" alt="Kilimo Anga Logo" />
+              <div className="ml-2">
+                <span className="block text-2xl font-bold text-green-600">Kilimo Anga</span>
+                <span className="block text-sm text-gray-300">by Kipepeo Aerospace</span>
+              </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Transforming African agriculture through precision drone technology,
@@ -60,6 +62,9 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/kipepeo-aerospace/" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
+              <a href="https://www.facebook.com/aerokipepeo/" className="bg-gray-800 p-2 rounded-lg hover:bg-green-600 transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
 
             </div>
           </div>
@@ -72,7 +77,7 @@ const Footer = () => {
               <li><a href="#technology" className="text-gray-300 hover:text-green-400 transition-colors">Technology</a></li>
               <li><a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a></li>
               <li><a href="#partner" className="text-gray-300 hover:text-green-400 transition-colors">Partner</a></li>
-              <li><a href="mailto:kilimoanga@kipepeo.space" className="text-gray-300 hover:text-green-400 transition-colors">Contact Us</a></li>
+              <li><a href="mailto:info@kipepeo.space" className="text-gray-300 hover:text-green-400 transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
@@ -82,7 +87,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-green-400 mr-3" />
-                <span className="text-gray-300">kilimoanga@kipepeo.space</span>
+                <span className="text-gray-300">info@kipepeo.space</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-green-400 mr-3" />
@@ -100,7 +105,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Kipepeo Aerospace. All rights reserved.
+              © 2026 Kipepeo Aerospace. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Privacy Policy</a>

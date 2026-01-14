@@ -1,32 +1,48 @@
 import React from 'react';
-import { Users, Building, GraduationCap, ArrowRight } from 'lucide-react';
+import { Users, Plane, Leaf, HandCoins, ArrowRight } from 'lucide-react';
 
 const Partner = () => {
   const partnerTypes = [
     {
-      icon: Users,
-      title: 'UAS Operators',
-      description: 'Professional drone service providers looking to expand into precision agriculture',
-      benefits: ['Advanced analytics platform', 'Specialized agricultural sensors', 'Training and certification programs', 'Marketing support'],
-      cta: 'Join Our Network',
-      link: "mailto:kilimoanga@kipepeo.space"
+      icon: Leaf,
+      title: 'Farmers & Cooperatives',
+      description: 'Join the pilot to get actionable insights on your farms and boost yields this season.',
+      benefits: [
+        'Discounted pilot service offerings',
+        'Real-time crop health insights & personalized recommendations',
+        'Direct support and feedback from our team',
+        'Early access to new features'
+      ],
+      cta: 'Join the Pilot',
+      link: "https://angademo.kipepeo.space"
     },
     {
-      icon: Building,
-      title: 'Agribusinesses',
-      description: 'Companies seeking to integrate precision agriculture data into their operations',
-      benefits: ['Custom API integrations', 'Bulk data processing', 'White-label solutions', 'Technical support'],
-      cta: 'Partner With Us',
-      link: "mailto:kilimoanga@kipepeo.space"
+      icon: Plane,
+      title: 'UAS / Drone Operators',
+      description: 'Partner with us to expand your services and generate revenue through pilot missions.',
+      benefits: [
+        'Recurring revenue from pilot engagements',
+        'Training and certification for precision agriculture operations',
+        'Participate in defining UAS requirements for agricultural missions',
+        'Technical support during pilot operations'
+      ],
+      cta: 'Explore Partnership',
+      link: "https://angademo.kipepeo.space"
     },
     {
-      icon: GraduationCap,
-      title: 'Research Institutions',
-      description: 'Universities and research centers advancing agricultural technology',
-      benefits: ['Research collaboration', 'Data sharing agreements', 'Student internship programs', 'Technology access'],
+      icon: HandCoins,
+      title: 'Agricultural Extension & NGOs',
+      description: 'Support farmers more effectively with data-driven guidance during the pilot.',
+      benefits: [
+        'Register and monitor farmers under your programs',
+        'Access to demo and pilot reports',
+        'Track measurable impact for stakeholders',
+        'Strengthen community agricultural outcomes'
+      ],
       cta: 'Collaborate',
-      link: "mailto:kilimoanga@kipepeo.space"
+      link: "https://angademo.kipepeo.space"
     }
+
   ];
 
   return (
@@ -37,8 +53,9 @@ const Partner = () => {
             Partner <span className="text-green-600">With Us</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join Kenya's leading precision agriculture ecosystem. Whether you're a drone operator,
-            agribusiness, or research institution, we have partnership opportunities that drive mutual growth.
+            Join the Kilimo Anga pilot and be part of Kenya's precision agriculture revolution. 
+            Whether you are a farmer, a drone operator, or in agricultural extension services, 
+            there are tangible benefits for you over the next 6-12 months.
           </p>
         </div>
 
@@ -77,7 +94,7 @@ const Partner = () => {
         {/* Partnership Benefits */}
         <div className="bg-gradient-to-br from-green-600 to-blue-600 rounded-2xl p-8 md:p-12 text-white">
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-4">Why Partner with Kilimo Anga?</h3>
+            <h3 className="text-3xl font-bold mb-4">Why Partner with us?</h3>
             <p className="text-xl opacity-90 max-w-2xl mx-auto">
               Join the forefront of agricultural innovation in Kenya and across East Africa
             </p>
@@ -85,8 +102,8 @@ const Partner = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">5x</div>
-              <div className="opacity-90">Market Growth Potential</div>
+              <div className="text-4xl font-bold mb-2">SDG 2</div>
+              <div className="opacity-90">Drive Food Security</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">24/7</div>
@@ -94,7 +111,7 @@ const Partner = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">100%</div>
-              <div className="opacity-90">Commitment to Innovation</div>
+              <div className="opacity-90">Commitment to Local Innovation</div>
             </div>
           </div>
         </div>

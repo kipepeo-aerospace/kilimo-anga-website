@@ -10,8 +10,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             {/*<Drone className="h-8 w-8 text-green-600" />*/}
-            <img src="/assets/kilimoanga_logo.png" className="h-8 w-8 text-green-600" alt="Kilimo Anga Logo" />
-            <span className="ml-2 text-xl font-bold text-gray-900">Kilimo Anga</span>
+            <img src="/assets/kipepeologoBLACK.png" className="h-8 w-8 text-green-600" alt="Kilimo Anga Logo" />
+            <div className="ml-2">
+              <span className="block text-2xl font-bold text-green-600">Kilimo Anga</span>
+              <span className="block text-sm text-gray-700">by Kipepeo Aerospace</span>
+            </div>
           </div>
 
           <nav className="hidden md:flex space-x-8">
@@ -25,8 +28,8 @@ const Header = () => {
             <a href="assets/teaser.pdf" target="_blank" className="bg-white text-green-60 px-4 py-2 rounded-lg hover:bg-green-700 hover:text-white transition-colors">
               Pitch Deck
             </a>
-            <a href="https://angaview.kipepeo.space" target="_blank" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
-              AngaView Dashboard
+            <a href="https://angademo.kipepeo.space" target="_blank" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
+              AngaView Demo
             </a>
           </div>
 
