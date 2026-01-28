@@ -25,9 +25,6 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="assets/teaser.pdf" target="_blank" className="bg-white text-green-60 px-4 py-2 rounded-lg hover:bg-green-700 hover:text-white transition-colors">
-              Pitch Deck
-            </a>
             <a href="https://angademo.kipepeo.space" target="_blank" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
               AngaView Demo
             </a>
@@ -47,7 +44,6 @@ const Header = () => {
               <a href="#about" className="block px-3 py-2 text-gray-700">About</a>
               <a href="#technology" className="block px-3 py-2 text-gray-700">Technology</a>
               <a href="#how-it-works" className="block px-3 py-2 text-gray-700">How It Works</a>
-              <a href="#impact" className="block px-3 py-2 text-gray-700">Impact</a>
               <a href="#partner" className="block px-3 py-2 text-gray-700">Partner</a>
             </div>
           </div>
